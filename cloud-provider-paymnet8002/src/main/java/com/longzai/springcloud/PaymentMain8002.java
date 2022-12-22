@@ -13,8 +13,6 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
  * @date: 2022/12/16 4:22 PM
  **/
 @SpringBootApplication
-@MapperScan("com.longzai.springcloud.dao")
-@ConfigurationPropertiesScan("com.longzai.springcloud")
 @EnableEurekaClient
 public class PaymentMain8002 {
     public static void main(String[] args) {
