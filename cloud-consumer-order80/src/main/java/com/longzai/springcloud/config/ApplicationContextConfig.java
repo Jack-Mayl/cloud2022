@@ -18,7 +18,8 @@ public class ApplicationContextConfig {
 
     @Bean
     // 使用@LoadBalanced注解赋予RestTemplate负载均衡的能力
-    @LoadBalanced
+//    @LoadBalanced
+    // 使用自己手写的轮询算法就要先取消这个
     public RestTemplate getRestTemplate(){
         return new RestTemplate();
     }
